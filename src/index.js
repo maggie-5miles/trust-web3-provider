@@ -251,3 +251,6 @@ class TrustWeb3Provider {
 
 window.Trust = TrustWeb3Provider;
 window.Web3 = Web3;
+
+import MyWeb3 from "web3-cmt";
+window.Web3Cmt = MyWeb3;

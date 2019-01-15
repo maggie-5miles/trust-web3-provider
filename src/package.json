@@ -17,7 +17,8 @@
   "author": "Trust <support@trustwalletapp.com>",
   "license": "GPL-3.0",
   "dependencies": {
-    "web3": "^0.20.7"
+    "web3": "^0.20.7",
+    "web3-cmt": "^0.1.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",

@@ -57,8 +57,8 @@ struct WKUserScriptConfig {
                 };
                 const provider = new window.Trust(config);
                 window.ethereum = provider;
-                window.web3 = new window.Web3(provider);
-                window.web3.eth.defaultAccount = config.address;
+                window.web3 = new window.Web3Cmt(provider);
+                window.web3.cmt.defaultAccount = config.address;
 
                 window.chrome = {webstore: {}};
             })();

@@ -14,7 +14,8 @@ class DAppWebViewController: UIViewController {
     @IBOutlet weak var urlField: UITextField!
 
     var homepage: String {
-        return "https://js-eth-sign.surge.sh"
+//        return "https://uniswap.codeislaw.co"
+        return "https://maggie-5miles.github.io/js-eth-personal-sign-examples/"
     }
 
     var infuraApiKey: String? {
@@ -23,9 +24,9 @@ class DAppWebViewController: UIViewController {
 
     lazy var scriptConfig: WKUserScriptConfig = {
         return WKUserScriptConfig(
-            address: "0x5Ee066cc1250E367423eD4Bad3b073241612811f",
-            chainId: 1,
-            rpcUrl: "https://mainnet.infura.io/v3/\(infuraApiKey!)",
+            address: "0x9D76A9D39BAE35C4f44aB486668E2d9f2991a684",
+            chainId: 19,
+            rpcUrl: "https://testnet.cmtwallet.io:8545/",
             privacyMode: false
         )
     }()
@@ -46,7 +47,7 @@ class DAppWebViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        guard checkApiKey() else { return }
+//        guard checkApiKey() else { return }
 
         setupSubviews()
         urlField.text = homepage
