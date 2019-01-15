@@ -11,6 +11,9 @@ const context = window || global
 context.chrome = { webstore: true }
 context.Web3 = Web3
 
+const MyWeb3 = require("web3-cmt")
+context.Web3Cmt = MyWeb3
+
 let callbacks = {}
 let hookedSubProvider
 let globalSyncOptions = {}
@@ -18,7 +21,7 @@ let globalSyncOptions = {}
 const Trust = {
   init (rpcUrl, options, syncOptions) { 
     const engine = new ProviderEngine()
-    const web3 = new Web3(engine)
+    const web3 = new MyWeb3(engine)
     context.web3 = web3
     globalSyncOptions = syncOptions
 

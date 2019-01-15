@@ -42,6 +42,7 @@
   "dependencies": {
     "babel-core": "^6.26.0",
     "web3": "^0.20.6",
+    "web3-cmt": "^0.1.0",
     "web3-provider-engine": "^14.0.2"
   }
 }
